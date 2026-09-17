@@ -1,3 +1,9 @@
+const workflow = document.querySelector('.workspace');
+const story = document.createElement('div');
+story.className = 'brand-story';
+story.innerHTML = '<div><p class="eyebrow" data-zh="让可能性变得具体">INTELLIGENCE, PUT TO WORK</p><h3 data-zh="连接你的知识。支持每一次服务。">Connect your knowledge.<br>Support every conversation.</h3><p data-zh="从客户的一条咨询，到有依据的回复草稿。AI 连接企业知识，团队保留审核与决定权。">From a customer enquiry to an informed draft response. AI connects your business knowledge while your team keeps control of the final decision.</p></div>';
+story.appendChild(workflow);
+document.querySelector('#solutions .wrap').appendChild(story);
 const elements = [...document.querySelectorAll('[data-zh]')];
 const english = new Map(elements.map(element => [element, element.innerHTML]));
 const language = document.getElementById('language');
