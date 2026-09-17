@@ -1,7 +1,7 @@
 const workflow = document.querySelector('.workspace');
 const story = document.createElement('div');
 story.className = 'brand-story';
-story.innerHTML = '<div><p class="eyebrow" data-zh="让可能性变得具体">INTELLIGENCE, PUT TO WORK</p><h3 data-zh="连接你的知识。支持每一次服务。">Connect your knowledge.<br>Support every conversation.</h3><p data-zh="从客户的一条咨询，到有依据的回复草稿。AI 连接企业知识，团队保留审核与决定权。">From a customer enquiry to an informed draft response. AI connects your business knowledge while your team keeps control of the final decision.</p></div>';
+story.innerHTML = '<div><p class="eyebrow" data-zh="看看实际会怎么用">WHAT THIS COULD LOOK LIKE</p><h3 data-zh="客户问了一个问题，接下来呢？">A customer has a question.<br>What happens next?</h3><p data-zh="AI 参考你的服务介绍，准备一份回复草稿。员工检查、修改后再发出。先从这样一件小事开始，看看能否帮团队省下时间。">AI uses your service information to prepare a draft reply. A staff member checks and edits it before sending. Start with a task like this and see whether it saves your team time.</p></div>';
 story.appendChild(workflow);
 document.querySelector('#solutions .wrap').appendChild(story);
 const elements = [...document.querySelectorAll('[data-zh]')];
