@@ -1,4 +1,16 @@
 /* SME positioning: clear service scope, real project experience and delivery expectations. */
+.contact{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+.consultation-card{min-width:0;padding:34px;border:1px solid #cfdfeb;border-radius:22px;background:linear-gradient(135deg,#f1f8fd,#fff 65%);box-shadow:0 18px 50px #143f5810;position:relative;overflow:hidden}
+.consultation-card:before{content:"";position:absolute;top:0;left:34px;width:48px;height:3px;background:#f7a273}
+.consultation-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:27px}
+.mail-symbol{display:grid;place-items:center;width:48px;height:48px;border:1px solid #cfdfeb;border-radius:14px;background:#fff;color:#087aa7;flex-shrink:0}.mail-symbol svg{width:25px;height:25px}
+.consultation-badge{font-size:10px;letter-spacing:1px;line-height:1.6;color:#46677b;text-align:right}
+.consultation-card h3{font-size:27px;line-height:1.25;margin:0 0 12px}.contact .consultation-intro{font-size:14px;line-height:1.8;margin:0 0 23px}
+.consultation-email{display:block;font-size:clamp(17px,1.7vw,24px);font-weight:600;letter-spacing:-.5px;line-height:1.5;color:#087ca9;margin-bottom:25px;overflow-wrap:anywhere}.consultation-email:hover{text-decoration:underline;text-underline-offset:5px}
+.consultation-action{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:52px;padding:13px 20px;border-radius:10px;background:#123247;color:#fff;font-size:14px;font-weight:600;transition:background-color .2s,box-shadow .2s}.consultation-action:hover{background-color:#086f99;box-shadow:0 6px 18px #087aa720}.consultation-action>span:last-child{font-size:22px;line-height:1}
+.consultation-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;border-top:1px solid #dce7ee;margin-top:24px;padding-top:17px;color:#637e8e;font-size:11px}
+@media(max-width:800px){.contact{grid-template-columns:1fr}.consultation-email{font-size:24px}}
+@media(max-width:420px){.consultation-card{padding:24px}.consultation-card h3{font-size:24px}.consultation-email{font-size:18px}.consultation-badge{font-size:9px}}
 .service-scope{margin-top:28px;padding:30px;border-left:3px solid #ef9f75;background:#f5f9fc;border-radius:0 16px 16px 0}.service-scope h3{font-size:24px;margin:0 0 12px}.service-scope p{max-width:850px;line-height:1.8}.service-scope .quiet{display:inline-block;margin-top:8px}
 .hero h1{font-size:clamp(56px,5.6vw,81px);line-height:1.07}
 .hero h1>span{font-size:.66em}
