@@ -18,6 +18,7 @@
 .project-map-title{display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:1.5px;color:#a1bdce;margin-bottom:26px}
 .project-map-title img{width:42px}
 .scope-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #ffffff1c;border-left:1px solid #ffffff1c}
+.scope-grid.scope-pair{grid-template-columns:1fr;gap:12px;border:0}.scope-pair>div{border:1px solid #ffffff1c;border-radius:10px}.scope-pair h3{margin-top:14px}.scope-pair p{line-height:1.7}.project-map-title>span{line-height:1.7;max-width:260px}
 .scope-grid>div{padding:22px;border-bottom:1px solid #ffffff1c;border-right:1px solid #ffffff1c;background:#ffffff03}
 .scope-grid>div>span{font:10px monospace;color:#81b5d0}
 .scope-grid h3{font-size:24px;margin:22px 0 9px;color:#eff9ff}
