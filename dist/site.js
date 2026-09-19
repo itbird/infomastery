@@ -22,7 +22,7 @@ language.addEventListener('click', () => {
     else element.innerHTML = english.get(element);
   });
   document.documentElement.lang = isChinese ? 'zh-CN' : 'en';
-  document.title = isChinese ? 'Infomastery Technology | 澳洲企业 AI 解决方案' : 'Infomastery Technology | AI for Australian businesses';
+  document.title = isChinese ? 'Infomastery Technology | 澳洲中小企业 AI 与 IT 解决方案' : 'Infomastery Technology | AI & IT Solutions for Australian SMEs';
   language.textContent = isChinese ? 'EN' : '中文';
   language.setAttribute('aria-label', isChinese ? 'Switch to English' : '切换至中文');
   menu.setAttribute('aria-label', isChinese ? '打开导航' : 'Open menu');
@@ -49,4 +49,3 @@ motion.addEventListener('click', () => {
   updateMotionLabel();
 });
 document.getElementById('year').textContent = new Date().getFullYear();
-
