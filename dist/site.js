@@ -15,18 +15,24 @@ function updateMotionLabel() {
   const paused = document.body.classList.contains('paused');
   motion.textContent = isChinese ? (paused ? '播放动画' : '暂停动画') : (paused ? 'Play motion' : 'Pause motion');
 }
-language.addEventListener('click', () => {
-  isChinese = !isChinese;
+function setLanguage(selectedLanguage) {
+  const nextIsChinese = selectedLanguage === 'zh-CN';
+  if (nextIsChinese === isChinese) return;
+  isChinese = nextIsChinese;
   elements.forEach(element => {
     if (isChinese) element.textContent = element.dataset.zh;
     else element.innerHTML = english.get(element);
   });
   document.documentElement.lang = isChinese ? 'zh-CN' : 'en';
   document.title = isChinese ? 'Infomastery Technology | 澳洲中小企业 AI 与 IT 解决方案' : 'Infomastery Technology | AI & IT Solutions for Australian SMEs';
-  language.textContent = isChinese ? 'EN' : '中文';
-  language.setAttribute('aria-label', isChinese ? 'Switch to English' : '切换至中文');
+  language.querySelectorAll('[data-language]').forEach(button => {
+    button.setAttribute('aria-pressed', String(button.dataset.language === selectedLanguage));
+  });
   menu.setAttribute('aria-label', isChinese ? '打开导航' : 'Open menu');
   updateMotionLabel();
+}
+language.querySelectorAll('[data-language]').forEach(button => {
+  button.addEventListener('click', () => setLanguage(button.dataset.language));
 });
 menu.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
