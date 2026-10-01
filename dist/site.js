@@ -1,8 +1,30 @@
-// Brand geometry follows the three slanted bars in the Infomastery identity.
+// Abstract information flowing into a coherent whole; decorative, not a product UI.
 const heroObject = document.createElement('div');
 heroObject.className = 'hero-object';
 heroObject.setAttribute('aria-hidden', 'true');
-heroObject.innerHTML = '<div class="object-orbit"></div><div class="object-orbit second"></div><div class="brand-object"><i></i><i></i><i></i></div><div class="object-caption"><span data-zh="连接业务与智能">BUSINESS × INTELLIGENCE</span><span>INFOMASTERY / 01</span></div>';
+heroObject.innerHTML = `<svg class="intelligence-art" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <linearGradient id="glass" x1="155" y1="130" x2="460" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".95"/><stop offset=".38" stop-color="#b2e8f3" stop-opacity=".45"/><stop offset=".72" stop-color="#2385aa" stop-opacity=".55"/><stop offset="1" stop-color="#035875" stop-opacity=".88"/></linearGradient>
+ <linearGradient id="ribbon" x1="160" y1="180" x2="410" y2="410" gradientUnits="userSpaceOnUse"><stop stop-color="#a0effa"/><stop offset=".45" stop-color="#138db7"/><stop offset="1" stop-color="#12475e"/></linearGradient>
+ <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="white" stop-opacity=".9"/><stop offset="1" stop-color="#d4eaf0" stop-opacity=".7"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#5cbedb" stop-opacity=".27"/><stop offset="1" stop-color="#5cbedb" stop-opacity="0"/></radialGradient>
+ <filter id="soft-shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+</defs>
+<ellipse cx="325" cy="504" rx="150" ry="19" fill="#205b75" opacity=".14" filter="url(#soft-shadow)"/>
+<circle cx="310" cy="288" r="250" fill="url(#halo)"/>
+<g stroke="#8cbbc9" stroke-opacity=".5"><ellipse cx="310" cy="288" rx="250" ry="118" transform="rotate(-32 310 288)"/><ellipse cx="310" cy="288" rx="214" ry="155" transform="rotate(48 310 288)" stroke-dasharray="2 8"/><path d="M52 185C162 150 172 383 310 288S434 133 550 193M75 420C172 430 206 332 310 288S459 302 548 372"/></g>
+<g class="intelligence-core">
+ <rect x="198" y="165" width="240" height="250" rx="74" transform="rotate(26 318 290)" fill="url(#glass)" stroke="#effcff" stroke-width="1.8"/>
+ <rect x="217" y="176" width="210" height="226" rx="66" transform="rotate(26 322 289)" stroke="#dcf9ff" stroke-opacity=".65"/>
+ <path d="M267 197C397 189 395 254 312 288C220 326 234 391 368 374" stroke="url(#ribbon)" stroke-width="39" stroke-linecap="round"/>
+ <path d="M268 183C398 178 402 242 314 279C233 312 234 375 365 360" stroke="#e0fbff" stroke-width="1.4" stroke-opacity=".85"/>
+ <circle cx="321" cy="286" r="15" fill="#ffc29a"/><circle cx="321" cy="286" r="24" stroke="#fff" stroke-opacity=".55"/>
+</g>
+<g class="data-panel panel-one" transform="translate(40 128) rotate(-9)"><rect width="135" height="90" rx="13" fill="url(#panel)" stroke="#fff"/><rect x="17" y="20" width="25" height="25" rx="7" fill="#b5dce8"/><path d="M56 25h56M56 36h37M18 63h92" stroke="#6c9bae" stroke-width="3" stroke-linecap="round"/><circle cx="111" cy="63" r="4" fill="#efa47b"/></g>
+<g class="data-panel panel-two" transform="translate(414 342) rotate(9)"><rect width="142" height="105" rx="14" fill="url(#panel)" stroke="#fff"/><path d="M20 28h62M20 40h40" stroke="#7daaba" stroke-width="3" stroke-linecap="round"/><path d="M20 81V66M40 81V58M60 81V69M80 81V48M100 81V39M120 81V29" stroke="#2c8aa8" stroke-width="6" stroke-linecap="round"/></g>
+<g fill="#f4a77b"><circle class="flow-dot" cx="111" cy="357" r="6"/><circle cx="489" cy="170" r="4"/><circle cx="434" cy="476" r="5"/></g>
+<g fill="#3088a6"><circle cx="85" cy="419" r="3"/><circle cx="540" cy="253" r="3"/><circle cx="224" cy="104" r="3"/></g>
+</svg><div class="object-caption"><span data-zh="让信息，形成价值">INFORMATION INTO POSSIBILITY</span><span>01 — CONNECT</span></div>`;
 document.querySelector('.hero-grid').appendChild(heroObject);
 // Decorative illustrations are custom vectors, not fictitious product screens.
 const illustrations = [
